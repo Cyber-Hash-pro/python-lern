@@ -45,9 +45,20 @@ print('result1:',result1)  # here result1 will be None because sub funcation me 
 # Strings in python
 v ='helloworld'
  # first talk on string indexing
-    # indexing start from 0 in python   indexing meeans index
-
+# indexing start from 0 in python   indexing meeans index
 print(v[0])  # h
 print(v[4])  # o
 print(v[-1]) # d
-print(v[8]) # r
+print(v[8])  # r
+# string Slicing
+Slicing= 'helloworld'
+print(Slicing[0:5])  # hello  (start index se leke end index-1 tak) 
+print(Slicing[5:10]) # world
+print(Slicing[:5])   # hello (agar start index nhi diya to by default 0 se start hoga)
+print(Slicing[0:7:2]) # hlo ol (step value 2) like range function
+# len() function in string
+lenth='nilesh'
+lenths='nilesh patil'
+print(len(lenth))  # 6
+print(len(lenths)) # 12 (space bhi count hota hae)
+# ----------------------------------------------------------
