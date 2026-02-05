@@ -62,3 +62,32 @@ lenths='nilesh patil'
 print(len(lenth))  # 6
 print(len(lenths)) # 12 (space bhi count hota hae)
 # ----------------------------------------------------------
+# 2 way of iterating string over string
+string_iterate = 'nilesh'
+# 1st way using for loop
+# for char in string_iterate:
+#     print(char)
+# 2nd way using while loop
+for i in string_iterate:
+    print(i)
+for i in range(len(string_iterate)):
+    print(string_iterate[i])        
+# i=0
+# while i < len(string_iterate):
+#     print(string_iterate[i])
+#     i += 1
+# ----------------------------------------------------------
+# cheak Sting
+check_string = 'hello world'
+# check if 'hello' is present in check_string
+if 'hello' in check_string: # hello is present in check_string is true  but 'hello  ' 2 space is not present false
+    print('yes hello is present')
+#----------------------------------------------------------
+# string method in python
+string_methods = '  hello world  '
+print(string_methods.upper())  # HELLO WORLD
+print(string_methods.lower())  # hello world
+print(string_methods.strip())  # hello world (remove space from start and end)
+print(string_methods.replace('world','there'))  # hello there
+print(string_methods.split())  # ['hello', 'world'] (split by space)
+# ----------------------------------------------------------
