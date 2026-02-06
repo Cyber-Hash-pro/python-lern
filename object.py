@@ -19,8 +19,15 @@ object2 = Factory1() # jab bhi aap Factory1() call karoge to ye __init__ functio
 
 class Factory2:
     def __init__(self,cartype,typres,bodytype): # in here self apne object ko target karnata hae 
+        self.cartype = cartype # hame pata ki self ka mtlab ek memory ke address data hold karna hae hamne ap self. karke udar use bola ki ek chij tere pass store karna hae  memory me
+        self.typres = typres # self.typres ka matlab hota hae apne object ke typres attribute ko target karna and typres is parameter of constructor function
+        self.bodytype = bodytype # java per self diya to wo hota hae ek object and hame use bolte he object artribute  slef ==object
+        
+        
+        
         print(f'This self is show memory address of object',self) # self ka matlab hota hae apne object ko target karna
         print(f'This is a constructor of Factory2 class',cartype,typres,bodytype)  
-object3 = Factory2('suv','petrol','sedan') # maltab jo tum class kko class karge tab udar wo parameter ke class value mnage gya object 3 is obj
+object3 = Factory2('suv',3,'sedan') # maltab jo tum class kko class karge tab udar wo parameter ke class value mnage gya object 3 is obj
 # what is self in python
 print(object3) # object3 ka memory address show karega jo self and object3 same memory address show karega
+print(object3.typres) 
